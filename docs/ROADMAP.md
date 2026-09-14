@@ -1,33 +1,33 @@
 # Roadmap
 
-## Phase 1 — functional rebuild (implemented)
-- 18-game arcade catalog
-- responsive home/catalog/profile/rewards/friends flows
-- six playable engine modes
-- anonymous persistent egg identity
-- room create/join/share/ready/tap-race/rematch loop
-- health endpoint, CSP/HSTS/security headers, tests, CI, Docker
-- zero external runtime dependencies
+## Complete
 
-## Phase 2 — authoritative multiplayer adapters
-- per-game match schemas and server-side simulation where cheating matters
-- reconnect tokens, presence expiry, host migration, spectators
-- WebSocket/SSE transport
-- persistent/distributed room state
+### Phase 1 — playable social arcade shell
+- 18-game catalog and six reusable arcade engines
+- profile, XP, rewards and responsive shell
+- room codes, authenticated mutations, race winner state
+- security headers, Docker, CI and local certification
 
-## Phase 3 — durable accounts/progression
-- Postgres users, scores, achievements, cosmetics
-- guest-to-account upgrade
-- leaderboard seasons and private friend boards
+### Phase 2 — resilient social runtime
+- server-owned room progress increments and rate bounds
+- reconnect after reload with session-scoped credentials
+- player presence heartbeats and room expiry
+- atomic single-instance room/leaderboard persistence
+- deterministic daily challenges
+- per-game best-score boards and shareable challenge URLs
+- explicit trust boundary between authoritative room races and community scoreboards
 
-## Phase 4 — retention/virality
-- daily challenge seeds
-- deep-link challenge cards
-- ghost races and group tournaments
-- installable PWA/offline shell
+## Next
 
-## Phase 5 — creator SDK
-- signed game manifest format
-- sandboxed game runtime boundary
-- submission/review pipeline
-- analytics and revenue controls
+### Phase 3 — distributed realtime
+- shared Redis/Valkey/Durable Object/Postgres state adapter
+- WebSocket or SSE room subscriptions instead of polling
+- reconnect leases across instances
+- idempotency keys and stronger abuse/rate controls
+- deployment preview and multi-browser acceptance matrix
+
+### Phase 4 — durable identity and competitive integrity
+- optional account upgrade from guest identity
+- signed/verified run submissions for competitive leaderboards
+- friends and private group leaderboards
+- challenge history, seasons and moderation controls

@@ -3,6 +3,8 @@ WORKDIR /app
 ENV NODE_ENV=production
 COPY package.json ./
 COPY server.mjs ./
+COPY lib ./lib
 COPY public ./public
+VOLUME ["/app/.data"]
 EXPOSE 3001
 CMD ["node", "server.mjs"]

@@ -35,15 +35,11 @@ npm run check
 npm run build
 ```
 
-## GitHub target
+## Repository
 
-Create the public repository from this project directory:
+GitHub: `rrahul0904/eggverse-rebuild`
 
-```bash
-gh repo create rrahul0904/eggverse-rebuild --public \
-  --description "Independent functional rebuild of a social browser arcade: 18 games, egg identity, multiplayer rooms, progression, CI and Docker" \
-  --source=. --remote=origin --push
-```
+`main` is the integration branch and GitHub Actions verifies tests, repository integrity, the static build, and the container build on every push.
 
 ## Docs
 

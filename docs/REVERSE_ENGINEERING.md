@@ -18,12 +18,14 @@ The rebuild therefore prioritizes the **arcade shell and social room primitive**
 
 Historical public writing about Eggverse's predecessor Anbu mentions React, Redux, Chakra UI, WebSockets, AWS and Stripe. Those details describe the older product and are not treated as proof of the current production stack.
 
-This rebuild uses:
-- React + TypeScript + Vite for the arcade shell
-- Express + Socket.IO for ephemeral multiplayer rooms
+The final Phase 1 rebuild deliberately uses a smaller stack:
+- browser-native ES modules for the arcade shell
+- Node 22 built-in HTTP server for static hosting and the multiplayer room API
+- same-origin JSON polling for room synchronization
 - localStorage for guest identity and progression
 - one parameterized mini-game runtime powering 18 catalog entries
 - Docker for a single-instance deployable artifact
+- zero third-party runtime packages or required credentials
 
 ## Deliberate differences
 

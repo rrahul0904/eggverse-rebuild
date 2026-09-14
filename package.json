@@ -1,9 +1,9 @@
 {
   "name": "eggverse-rebuild",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
-  "description": "Zero-dependency social browser arcade rebuild with 18 games and shareable multiplayer rooms.",
+  "description": "Zero-dependency social browser arcade rebuild with 18 games, authoritative rooms, reconnect, challenges and persistent scoreboards.",
   "scripts": {
     "dev": "node server.mjs",
     "start": "NODE_ENV=production node server.mjs",
